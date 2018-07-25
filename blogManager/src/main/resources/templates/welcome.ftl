@@ -20,7 +20,7 @@
 		<!-- 顶部 -->
 		<div class="layui-header header">
 			<div class="layui-main mag0">
-				<a href="${basePath!}/welcome" class="logo">ZJT.Blog</a>
+				<a href="${basePath!}/welcome" class="logo">SYP.Blog</a>
 				<!-- 显示/隐藏菜单 -->
 				<a href="javascript:;" class="seraph hideMenu icon-caidan"></a>
 				<!-- 顶级菜单 -->
@@ -131,7 +131,7 @@
 		</div>
 		<!-- 底部 -->
 		<div class="layui-footer footer">
-			<p><span>copyright @2018 ZJT</span></p>
+			<p><span>copyright @2018 SYP</span></p>
 		</div>
 	</div>
 

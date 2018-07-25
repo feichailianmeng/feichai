@@ -10,7 +10,7 @@
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
             <!--其中tk.mybatis.mapper.generator.MapperPlugin很重要，用来指定通用Mapper对应的文件，这样我们生成的mapper都会继承这个通用Mapper-->
-            <property name="mappers" value="com.zjt.util.MyMapper" />
+            <property name="mappers" value="com.syp.util.MyMapper" />
             <!--caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true-->
             <property name="caseSensitive" value="false"/>
         </plugin>
@@ -24,7 +24,7 @@
 
         <!--数据库链接地址账号密码，这里由于我使用的是根据开发和生产分离的配置文件，所以这里直接写上了-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/zjtblog?useUnicode=true&amp;characterEncoding=utf-8"
+                        connectionURL="jdbc:mysql://localhost:3306/sypblog?useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
                         password="root">
         </jdbcConnection>
@@ -34,7 +34,7 @@
         </javaTypeResolver>
 
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="com.zjt.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.syp.entity" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -49,7 +49,7 @@
                 type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.zjt.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.syp.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 

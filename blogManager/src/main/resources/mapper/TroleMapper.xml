@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zjt.mapper.TroleMapper">
-  <resultMap id="BaseResultMap" type="com.zjt.entity.Trole">
+<mapper namespace="com.syp.mapper.TroleMapper">
+  <resultMap id="BaseResultMap" type="com.syp.entity.Trole">
     <!--
       WARNING - @mbg.generated
     -->
